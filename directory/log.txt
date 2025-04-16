@@ -1,2 +1,5 @@
 [15.04.2025 | 21:04:31] Search by Firm name
 [15.04.2025 | 21:29:01] Search by Phone number
+[16.04.2025 | 08:35:27] Search by Career
+[16.04.2025 | 08:35:32] Search by Career
+[16.04.2025 | 08:53:38] Search by Address

@@ -4,4 +4,5 @@ int main()
 {
    DirectoryHandler::Launch();
 
+   return 0;
 }

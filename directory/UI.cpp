@@ -31,33 +31,40 @@ string UI::NameInput()
 string UI::OwnerInput()
 {
 	std::cout << "Type owner name:\t";
+
 	char owner[50];
-	
 	std::cin.getline(owner, 50);
+
 	return owner;
 }
 
 string UI::PhoneInput()
 {
 	std::cout << "Type phone number:\t";
+
 	char phone[20];
 	std::cin.getline(phone, 20);
+
 	return phone;
 }
 
 string UI::AddressInput()
 {
 	std::cout << "Type address:\t";
+
 	char address[100];
 	std::cin.getline(address, 100);
+
 	return address;
 }
 
 string UI::CareerInput()
 {
 	std::cout << "Type career field:\t";
+
 	char career[50];
 	std::cin.getline(career, 50);
+
 	return career;
 }
 

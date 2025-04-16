@@ -176,22 +176,22 @@ void string::copy(string& dest, const char* source) const
 
 void string::concat(string& dest, const char* source) const
 {
-	size_t source_len = dest._len + length(source);
-	dest._len += source_len;
+	size_t source_len =  length(source);
+	dest._len = _len + source_len;
 	dest._capacity = dest._len * ascending_factor;
 
 	dest._string = new char[dest._capacity];
 
-	for (size_t i = 0; i < dest._len; i++)
+	for (size_t i = 0; i < _len; i++)
 	{
-		dest._string[i] = source[i];
+		dest._string[i] = _string[i];
 	}
 
-	for (size_t i = dest._len, j = 0; i < source_len; i++, j++)
+	for (size_t i = _len, j = 0; i < dest._len; i++, j++)
 	{
 		dest._string[i] = source[j];
 	}
-	dest._string[source_len] = '\0';
+	dest._string[dest._len] = '\0';
 }
 
 void string::repeat(string& dest, const char* source, const short count) const

@@ -3,7 +3,7 @@
 #include <chrono>
 void FileHandler::WriteFieldToFile(const string& str, std::ofstream& fout)
 {
-	size_t size = str.GetLen() + 1;
+	size_t size = str.GetLen();
 
 	fout.write(reinterpret_cast<const char*>(&size), sizeof(size));
 
@@ -135,7 +135,7 @@ void FileHandler::ReadLog(const char* fileName, string& buffer)
 		while (fin.getline(line, 256))
 		{
 			buffer += line;
-			//buffer[buffer.GetLen() - 1] = '\n';
+			buffer += "\n";
 		}
 
 		fin.close();

@@ -14,7 +14,6 @@ class DirectoryHandler
 
 	static Directory* NewDirectory();
 public:
-
 	static void Launch();
 
 	~DirectoryHandler();
